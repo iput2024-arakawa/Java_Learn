@@ -24,7 +24,7 @@ public class Employee{
     }
 
     public void printInfo(){
-        System.out.println("名前： " + name + "給与： " + baseSalary + "円");
+        System.out.println("名前: " + name + ", " + "給与: " + baseSalary + "円");
         return;
     }
 }
