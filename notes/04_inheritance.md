@@ -29,8 +29,12 @@ public class BankAccount {
         setBalance(balance);
     }
 
-    public String getOwner() { return owner; }
-    public int getBalance() { return balance; }
+    public String getOwner() {
+        return owner;
+    }
+    public int getBalance() {
+        return balance;
+    }
 
     public void setBalance(int balance) {
         this.balance = (balance < 0) ? 0 : balance;
