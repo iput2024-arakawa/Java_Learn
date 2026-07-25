@@ -5,8 +5,12 @@ public class Intern extends Employee{
         this.mentor = mentor;
     }
 
+    public String getMentor(){
+        return mentor;
+    }
+
     @Override
     public void printInfo(){
-        System.out.println("名前: " + getName() + "," + "給与: " + getBaseSalary() + "円 " + "(メンター, " +  mentor + ")");
+        System.out.println("名前: " + getName() + ", " + "給与: " + getBaseSalary() + "円(メンター: " + mentor + ")" );
     }
 }
