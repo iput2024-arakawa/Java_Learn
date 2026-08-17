@@ -34,9 +34,12 @@ Java標準に用意されている「よく使う道具」を学び、実用的�
 
 - **トピック7：ジェネリクス／コレクション（List・Set・Map）／例外処理**
   → 座学は`07_generics_collections_exceptions.md`に作成済み。次は理解確認→演習に進む。
-- **トピック8：ラムダ式とStream API**
+- **トピック8：ラムダ式とStream API＋`package`の基本**
   Pythonのリスト内包表記・`map`/`filter`に近い書き方がJavaにもあることを学ぶ。
   例：`list.stream().filter(...).map(...).collect(...)`
+  あわせて、ここから`package`宣言（クラスの所属先を明示する仕組み）を軽く導入し、
+  以降の演習コードでは意識して使っていく。ビルドツールと連動した本格的な
+  ディレクトリ構成（`src/main/java`など）はv2で改めて扱う。
 - **トピック9：Optional、日付時刻API（`LocalDate`/`LocalDateTime`）、文字列操作の応用**
   「値がないかもしれない」をnullではなく型で表現する考え方（Pythonの`None`との対比）。
 
