@@ -3,7 +3,7 @@ public class Book{
     private String isbn;
     private boolean borrowed;
     
-    public Book(String title, String isbn, boolean borrowed){
+    public Book(String title, String isbn){
         this.title = title;
         this.isbn = isbn;
         this.borrowed = false;
@@ -23,5 +23,11 @@ public class Book{
 
     public void setBorrowed(boolean borrowed){
         this.borrowed = borrowed;
+    }
+
+    @Override
+    public String toString(){
+        String status = borrowed ? "貸出中" : "貸出可";
+        return title + " (" + isbn + ") [" + status + "]";
     }
 }
